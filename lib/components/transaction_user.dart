@@ -23,7 +23,31 @@ final _transactions = [
     ),
     Transaction(
       id: 't2',
-      title: 'Conta de Luz',
+      title: 'Conta #1',
+      value: 211.20,
+      date: DateTime.now(),
+    ),
+        Transaction(
+      id: 't2',
+      title: 'Conta #2',
+      value: 211.20,
+      date: DateTime.now(),
+    ),
+        Transaction(
+      id: 't2',
+      title: 'Conta #3',
+      value: 211.20,
+      date: DateTime.now(),
+    ),
+        Transaction(
+      id: 't2',
+      title: 'Conta #4',
+      value: 211.20,
+      date: DateTime.now(),
+    ),
+        Transaction(
+      id: 't2',
+      title: 'Conta #5',
       value: 211.20,
       date: DateTime.now(),
     ),
@@ -46,8 +70,8 @@ final _transactions = [
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        TransactionList(_transactions),
         TransactionForm(_addTransaction),
+        TransactionList(_transactions),
       ],
       
     );
