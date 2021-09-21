@@ -21,36 +21,6 @@ final _transactions = [
       value: 310.76,
       date: DateTime.now(),
     ),
-    Transaction(
-      id: 't2',
-      title: 'Conta #1',
-      value: 211.20,
-      date: DateTime.now(),
-    ),
-        Transaction(
-      id: 't2',
-      title: 'Conta #2',
-      value: 211.20,
-      date: DateTime.now(),
-    ),
-        Transaction(
-      id: 't2',
-      title: 'Conta #3',
-      value: 211.20,
-      date: DateTime.now(),
-    ),
-        Transaction(
-      id: 't2',
-      title: 'Conta #4',
-      value: 211.20,
-      date: DateTime.now(),
-    ),
-        Transaction(
-      id: 't2',
-      title: 'Conta #5',
-      value: 211.20,
-      date: DateTime.now(),
-    ),
   ];
 
   _addTransaction (String title, double value){
