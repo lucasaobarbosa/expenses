@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
-
 import 'dart:math';
+import 'dart:io';
+
+import 'package:flutter/material.dart';
 import './components/transaction_form.dart';
 import './components/transaction_list.dart';
 import 'components/chart.dart';
@@ -128,7 +129,8 @@ class _MyHomePageState extends State<MyHomePage> {
             //   mainAxisAlignment: MainAxisAlignment.center,
             //   children: <Widget>[
             //     Text('Exibir Gráfico'),
-            //     Switch(
+            //     Switch.adaptive(
+            //      activeColor: Theme.of(context).accentColor,
             //       value: _showChart,
             //       onChanged: (value) {
             //         setState(() {
@@ -151,7 +153,8 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
+      floatingActionButton: Platform.isIOS ? Container() :
+      FloatingActionButton(
         child: Icon(Icons.add),
         onPressed: () => _openTransactionFormModal(context),
       ),
