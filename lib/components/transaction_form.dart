@@ -78,8 +78,9 @@ class _TransactionFormState extends State<TransactionForm> {
                   children: <Widget>[
                     Expanded(
                       child: Text(
-                        _selectedDate == null ? 'Nenhuma data selecionada!'
-                        : 'Data Selecionada: ${DateFormat ('dd/MM/yyyy').format(_selectedDate)}',
+                        _selectedDate == null
+                          ? 'Nenhuma data selecionada!'
+                          : 'Data Selecionada: ${DateFormat('dd/MM/y').format(_selectedDate)}',
                       ),
                     ),
                     TextButton(
@@ -94,24 +95,6 @@ class _TransactionFormState extends State<TransactionForm> {
                   ],
                 ),
               ),
-              Container(
-              height: 70,
-              child: Row(
-                children: <Widget>[
-                  Text('Nenhuma data selecionada!'),
-                  TextButton(
-                    child: Text(
-                      'Selecionar Data',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    onPressed: () {},
-                  )
-                ],
-              ),
-            ),
-
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
